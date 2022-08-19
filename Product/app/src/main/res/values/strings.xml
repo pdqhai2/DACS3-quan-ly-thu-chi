@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MoMa</string>
+    <string name="income_select">Select Item</string>
+
+    <string name="nav_home">Home</string>
+    <string name="nav_khoanthu">Khoản Thu</string>
+    <string name="nav_khoanchi">Khoản Chi</string>
+    <string name="nav_gioithieu">Giới thiệu</string>
+    <string name="nav_thu">Thu</string>
+    <string name="nav_chi">Chi</string>
+    <string name="hello">Hello</string>
+    <string name="thu_rent">THU</string>
+    <string name="chi_rent">CHI</string>
+    <string name="thongke_rent">THỐNG KÊ</string>
+    <string name="canhan_rent">CÁ NHÂN</string>
+    <string name="expand_all">Nhấn để xem...</string>
+    <string name="nav_loaithu">Loại Thu</string>
+    <string name="nav_loaichi">Loại Chi</string>
+    <string name="nav_profile">Thông tin</string>
+    <string name="nav_drawer_open">Open nav drawer</string>
+    <string name="nav_drawer_close">Close nav drawer</string>
+    <string name="nav_change_pass">Thoát</string>
+</resources>

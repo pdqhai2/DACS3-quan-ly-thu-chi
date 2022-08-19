@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/outcome_background">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="250dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:text="CHI TIẾT KHOẢN CHI"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:text="Tên gợi nhớ"
+        android:textSize="22dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"></TextView>
+
+    <TextView
+        android:id="@+id/detail_income_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="30dp"
+        android:text="tên khoản thu"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tvname"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"></TextView>
+
+    <TextView
+        android:id="@+id/tvval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="44dp"
+        android:text="Giá tiền"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvname"></TextView>
+
+    <TextView
+        android:id="@+id/detail_income_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="36dp"
+        android:text="tiền"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tvname"
+        app:layout_constraintTop_toBottomOf="@+id/detail_income_name"></TextView>
+
+    <TextView
+        android:id="@+id/tvtype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="44dp"
+        android:text="Loại"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvval"></TextView>
+
+    <TextView
+        android:id="@+id/detail_income_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:text="type"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tvname"
+        app:layout_constraintTop_toBottomOf="@+id/detail_income_val"></TextView>
+
+    <TextView
+        android:id="@+id/tvday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:text="Ngày thêm"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvtype"></TextView>
+
+    <TextView
+        android:id="@+id/detail_income_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
+        android:text="type"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tvname"
+        app:layout_constraintTop_toBottomOf="@+id/detail_income_type"></TextView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="600dp"
+        app:itemBackground="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/menu_nav" />
+
+    <Button
+        android:id="@+id/detail_del"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="510dp"
+        android:text="xóa"
+        android:backgroundTint="@color/red"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/detail_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_marginTop="510dp"
+        android:layout_marginEnd="80dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/green"
+        android:text="sửa"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/detail_income_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="223dp"
+        tools:ignore="MissingConstraints"
+        android:visibility="invisible"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp">
+
+    <RelativeLayout
+        android:id="@+id/outtype_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/outtype_nameTv"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="5dp"
+            android:text="Tiền lương"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="60dp"
+            android:paddingLeft="5dp"
+            android:text="Số thu nhập :"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/outtype_incomeNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="60dp"
+            android:paddingLeft="5dp"
+            android:text="3"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/outtype_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:paddingLeft="5dp"
+            android:text="outtype id"
+            android:textSize="15dp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/outtype_icon_delBtn"
+            android:layout_width="122dp"
+            android:layout_height="72dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="230dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/red"
+            android:text="Xóa"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

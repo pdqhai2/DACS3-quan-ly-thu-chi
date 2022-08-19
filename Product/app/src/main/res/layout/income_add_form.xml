@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/income_background">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="329dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="16dp"
+        android:text="ĐIỀN THÔNG TIN"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nametv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:text="Tên gợi nhớ"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/income_add_name"
+        android:layout_width="301dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="0dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Tên gợi nhớ"
+        android:inputType="textPersonName"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nametv" />
+
+    <TextView
+        android:id="@+id/valtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Giá tiền"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/income_add_name" />
+
+    <Button
+        android:id="@+id/income_add_editformat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="208dp"
+        android:background="@drawable/layout_vien"
+        android:backgroundTint="@color/purple_700"
+        android:text="xác nhận giá tiền"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/valtv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/income_add_val"
+        android:layout_width="301dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="52dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Giá tiền"
+        android:inputType="number"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/valtv" />
+
+    <TextView
+        android:id="@+id/valwarning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Lưu ý : Chỉ áp dụng mệnh giá VND"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/income_add_val" />
+
+    <TextView
+        android:id="@+id/datetv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Ngày tháng năm"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/valwarning" />
+
+    <EditText
+        android:id="@+id/income_add_day"
+        android:layout_width="95dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="0dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Ngày"
+        android:inputType="number"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/datetv" />
+
+    <EditText
+        android:id="@+id/income_add_month"
+        android:layout_width="95dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="0dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Tháng"
+        android:inputType="number"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/datetv" />
+
+    <EditText
+        android:id="@+id/income_add_year"
+        android:layout_width="95dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="290dp"
+        android:layout_marginTop="0dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Năm"
+        android:inputType="number"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/datetv" />
+
+    <Button
+        android:id="@+id/income_add_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/green"
+        android:padding="15dp"
+        android:text="xác nhận"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.844"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/income_add_month" />
+
+    <Button
+        android:id="@+id/income_add_cancel_2"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:backgroundTint="@color/red"
+        android:padding="15dp"
+        android:layout_marginTop="20dp"
+        android:text="hủy"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/income_add_month" />
+
+    <Button
+        android:id="@+id/income_add_todayBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/layout_vien"
+        android:backgroundTint="@color/purple_700"
+        android:text="hôm nay"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/datetv"
+        app:layout_constraintTop_toBottomOf="@+id/valwarning"
+        android:visibility="invisible"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="600dp"
+        app:itemBackground="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/menu_nav" />
+</androidx.constraintlayout.widget.ConstraintLayout>

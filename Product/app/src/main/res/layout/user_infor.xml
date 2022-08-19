@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="605dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".About">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFF"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@color/purple_700"
+                    android:padding="10dp">
+
+
+
+                    <TextView
+                        android:id="@+id/full_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/josefi_bold"
+                        android:includeFontPadding="false"
+                        android:text="user name"
+                        android:textColor="@color/white"
+                        android:textSize="50dp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="395dp"
+                    android:layout_height="125dp"
+                    android:layout_marginTop="-105dp"
+                    android:padding="20dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:background="#FFFF"
+                        android:hint="Họ và tên"
+                        android:padding="15dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FFFF"
+                            android:drawableLeft="@drawable/ic_menu_user"
+                            android:drawablePadding="10dp"
+                            android:text="user name"
+                            android:textSize="20dp"/>
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:background="#FFFF"
+                        android:hint="Số điện thoại"
+                        android:padding="15dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FFFF"
+                            android:drawableLeft="@drawable/ic_baseline_phone_24"
+                            android:drawablePadding="10dp"
+                            android:textSize="20dp"
+                            android:text="user phone" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/purple_700"
+                        android:fontFamily="@font/josefi_bold"
+                        android:padding="15sp"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:text="Chỉnh sửa thông tin" />
+
+                    <Button
+                        android:id="@+id/user_logoutBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/purple_700"
+                        android:fontFamily="@font/josefi_bold"
+                        android:padding="15sp"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:text="đăng xuất" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="600dp"
+        app:itemBackground="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/menu_nav" />
+</androidx.constraintlayout.widget.ConstraintLayout>

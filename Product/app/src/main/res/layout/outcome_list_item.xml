@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp">
+
+    <RelativeLayout
+        android:id="@+id/income_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/outcome_nameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="name"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/outcome_valTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/outcome_nameTv"
+            android:paddingLeft="5dp"
+            android:text="val"
+            android:textColor="@color/red"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/outcome_dayTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/outcome_valTv"
+            android:paddingLeft="5dp"
+            android:text="dd"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/outcome_valTv"
+            android:layout_toEndOf="@id/outcome_dayTv"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+            android:text="/"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/outcome_monthTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/outcome_valTv"
+            android:layout_toEndOf="@id/tv1"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+            android:text="mm"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/outcome_valTv"
+            android:layout_toEndOf="@id/outcome_monthTv"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+            android:text="/"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+
+        <TextView
+            android:id="@+id/outcome_yearTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/outcome_valTv"
+            android:layout_toEndOf="@id/tv2"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+            android:text="yyyy"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/outcome_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:paddingLeft="5dp"
+            android:text="income id"
+            android:textSize="15dp"
+            android:visibility="invisible" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

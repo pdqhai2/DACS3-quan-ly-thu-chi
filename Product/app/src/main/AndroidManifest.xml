@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.moma">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application
+        android:usesCleartextTraffic="true"
+
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MoMa">
+
+        <activity
+            android:name=".income.list.byIntype.IncomeListByIntype"
+            android:exported="true"/>
+
+        <activity
+            android:name=".thongke.year.InoutPerYearDetail"
+            android:exported="true"/>
+
+        <activity
+            android:name=".thongke.year.InoutPerYear"
+            android:exported="true"/>
+
+        <activity
+            android:name=".thongke.month.InoutPerMonthDetail"
+            android:exported="true"/>
+
+        <activity
+            android:name=".thongke.month.InoutPerMonth"
+            android:exported="true"/>
+
+        <activity
+            android:name=".income.edit.IncomeEditTypeList"
+            android:exported="true"/>
+
+        <activity
+            android:name=".income.edit.IncomeEdit"
+            android:exported="true"/>
+
+        <activity
+            android:name=".outcome.detail.OutcomeDetail"
+            android:exported="true"/>
+
+        <activity
+            android:name=".outcome.add.OutcomeAddForm"
+            android:exported="true"/>
+
+        <activity
+            android:name=".outcome.add.OutcomeAddTypeList"
+            android:exported="true"/>
+
+        <activity
+            android:name=".outcome.outtype.add.OuttypeAdd"
+            android:exported="true"/>
+
+        <activity
+            android:name=".outcome.outtype.list.OuttypeList"
+            android:exported="true"/>
+
+        <activity
+            android:name=".outcome.list.OutcomeList"
+            android:exported="true"/>
+
+        <activity
+            android:name=".income.intype.add.IntypeAdd"
+            android:exported="true"/>
+
+        <activity
+            android:name=".thongke.thongkeMain"
+            android:exported="true"/>
+
+        <activity
+            android:name=".user.UserDetail"
+            android:exported="true"/>
+
+        <activity
+            android:name=".income.add.IncomeAddTypeList"
+            android:exported="true"/>
+
+        <activity
+            android:name=".income.add.IncomeAddForm"
+            android:exported="true"/>
+
+        <activity
+            android:name=".income.intype.list.IntypeList"
+            android:exported="true"/>
+
+
+        <activity
+            android:name=".income.detail.IncomeDetail"
+            android:exported="true"/>
+
+        <activity
+            android:name=".income.list.IncomeList"
+            android:exported="true"/>
+
+        <activity
+            android:name=".Home"
+            android:exported="true"/>
+
+        <activity
+            android:name=".Register"
+            android:exported="true"/>
+
+        <activity
+            android:name=".LogIn"
+            android:exported="true"/>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
